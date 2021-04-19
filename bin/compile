@@ -47,7 +47,7 @@ fi
 # Finally do some compilation.
 mkdir ./tor-sources
 tar xC ./tor-sources -f tor-*.tar.gz 
-cd ./tor-sources
+cd ./tor-sources/tor-*/
 ./configure --prefix=$BUILD_DIR
 if ! [ $? ]; then
     echo "FAILED to configure for compliation" | indent
