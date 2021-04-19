@@ -46,7 +46,7 @@ fi
 
 # Finally do some compilation.
 mkdir ./tor-sources
-tar -zxf tor-*.tar.gz ./tor-sources
+tar xC ./tor-sources -f tor-*.tar.gz 
 cd ./tor-sources
 ./configure --prefix=$BUILD_DIR
 if ! [ $? ]; then
